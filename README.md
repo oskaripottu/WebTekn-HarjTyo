@@ -1,2 +1,2 @@
-# WebTekn-HarjoTyo
+# WebTekn-HarjTyo
 WebTekniika Harjoitustyö
