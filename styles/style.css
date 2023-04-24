@@ -1,1 +1,48 @@
+body {
+  background-color: #F49A28;
+}
 
+.navbar {
+  background-color: #F18804 !important;
+  min-height: 100px;
+}
+
+.nav-link button {
+  min-width: 75x;
+}
+
+#main {
+  margin: 5% 0;
+}
+
+.noteBorder {
+  border: 1px solid black;
+  margin: 5px;
+}
+
+.importantNote {
+  border: 1px solid red;
+  margin: 5px;
+  font-weight: 200;
+  color: red;
+}
+
+#notes {
+  display: none;
+}
+
+.card {
+  margin: 5px auto !important;
+}
+
+@media only screen and (min-width: 576px) {}
+
+@media only screen and (min-width: 768px) {
+  .navbar-nav {
+    margin-left: -175px;
+  }
+
+  .card {
+    margin: 5px 5px !important;
+  }
+}

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ossin hypersivusto</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    <link href="styles/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Ossin hypersivusto</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav text-center">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./index.html"><button type="button" class="btn btn-outline-dark">Etusivu</button></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./page1.html"><button type="button" class="btn btn-outline-dark">Accordion sivu</button></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./page2.html"><button type="button" class="btn btn-outline-dark">Toka sivu</button></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./page3.html"><button type="button" class="btn btn-outline-dark">Lista sivu</button></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container-fluid h-100 justify-content-center" id="main">
+        <div class="row justify-content-center">
+            <div class="col-md-9 p-0 pt-4 pb-4 border rounded-3 bg-light">
+                <div class="accordion accordion-flush" id="accordionSivu">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEka">
+                                Ensimmäinen accordion palikka
+                            </button>
+                        </h2>
+                        <div id="collapseEka" class="accordion-collapse collapse show" data-bs-parent="#accordionSivu" style="">
+                            <div class="accordion-body">
+                                <p>
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate consequuntur,
+                                    neque earum soluta corrupti, blanditiis labore optio nisi dolores repellat, facilis
+                                    perferendis officia fuga! Modi enim doloribus dignissimos alias voluptatem.
+                                    Facere, adipisci. Aliquid, perferendis! Vitae nostrum minima expedita, non, fuga sit
+                                    nesciunt eaque aut ad dolorem, id cupiditate reprehenderit quo soluta eligendi
+                                    sapiente unde. Quae consequuntur a eos facilis aut.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseToka">
+                                Toinenki accordion palikka
+                            </button>
+                        </h2>
+                        <div id="collapseToka" class="accordion-collapse collapse" data-bs-parent="#accordionSivu"
+                            style="">
+                            <div class="accordion-body">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">#</th>
+                                            <th scope="col">Nimi</th>
+                                            <th scope="col">Ikä</th>
+                                            <th scope="col">Maa</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>Pena</td>
+                                            <td>51</td>
+                                            <td>Suomi</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2</th>
+                                            <td>Jack</td>
+                                            <td>45</td>
+                                            <td>USA</td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">3</th>
+                                            <td>Günther</td>
+                                            <td>35</td>
+                                            <td>Saksa</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseKolmas">
+                                Ja kolmaskin!
+                            </button>
+                        </h2>
+                        <div id="collapseKolmas" class="accordion-collapse collapse" data-bs-parent="#accordionSivu">
+                            <div class="accordion-body justify-content-center text-center">
+                                <p>Tännehän voi oikasti tehä mitä vaan sisälle..</p>
+                                <div class="row">
+                                    <div class="col-md m-1 card" style="width: 18rem;">
+                                        <img src="images/viivi.jpg" class="card-img-top rounded m-1" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Viivi</h5>
+                                            <p class="card-text">Viivi oli oikea hellyyspuuska tuuhean häntänsä kanssa.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md m-1 card" style="width: 18rem;">
+                                        <img src="images/sohvi.jpg" class="card-img-top rounded m-1" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Sohvi</h5>
+                                            <p class="card-text">Sohvi näyttää yleensä äkäiseltä mutta, on kyllä kaikkea muuta.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md m-1 card" style="width: 18rem;">
+                                        <img src="images/hertta.jpg" class="card-img-top rounded m-1" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Hertta</h5>
+                                            <p class="card-text">Hertan sijainnin voi paikantaa pelkän voimakkaan kehräyksen perusteella.</p>
+                                        </div>
+                                    </div>                                                                       
+                                </div>  
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
