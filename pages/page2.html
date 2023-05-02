@@ -17,7 +17,7 @@
 <body>
     <nav class="navbar navbar-expand-md navbar-light bg-light">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Ossin hypersivusto</a>
+            <a class="navbar-brand" href="#">Ossin sivusto</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -31,7 +31,7 @@
                         <a class="nav-link" href="./page1.html"><button type="button" class="btn btn-outline-dark">Accordion sivu</button></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./page2.html"><button type="button" class="btn btn-outline-dark">Toka sivu</button></a>
+                        <a class="nav-link" href="./page2.html"><button type="button" class="btn btn-outline-dark">Mockup sivu</button></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="./page3.html"><button type="button" class="btn btn-outline-dark">Lista sivu</button></a>
@@ -44,9 +44,24 @@
         <div class="row justify-content-center">
             <div class="col-md-7 m-5 p-5 border rounded-5 text-center">
                 
-                <button type="button" id="magicButton" class="btn btn-primary" data-toggle="modal" onclick="magicHappens();">
-                    Uskallappa painaa
-                </button>
+                <div id="carouselExample" class="carousel slide">
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="../plan/desktop-plan.jpg" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="../plan/mobile-plan.jpg" class="d-block w-100" alt="...">
+                      </div>
+                    </div>
+                    <button class="text-bg-secondary carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="text-bg-secondary carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                  </div>
 
             </div>
         </div>

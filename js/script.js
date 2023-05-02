@@ -7,6 +7,20 @@ let noteAdder = document.getElementById("noteAdder");
 let newNote = document.getElementById("newNote");
 let importantNote = document.getElementById("importantNewNote");
 
+let noteAreaVisible = false;
+
+function makeNoteAreaVisible() {
+    let noteArea = document.getElementById("notes");
+    let opacity = 0;
+    let fadeIn = setInterval(() => {
+       if (opacity >= 1) {
+          clearInterval(fadeIn);
+       }
+       noteArea.style.opacity = opacity;
+       opacity += 0.01;
+    }, 10);
+}
+
 function addNote() {
 
     //Tarkistetaan onko nimikenttä tyhjä
@@ -23,6 +37,7 @@ function addNote() {
     
     //Luodaan uusia elementtejä
     let div = document.createElement("div");
+    div.setAttribute("id", "note");
     let h5 = document.createElement("h5");
     let p = document.createElement("p");
     let p2 = document.createElement("p");
@@ -49,8 +64,17 @@ function addNote() {
     div.append(h5, p);
 
     //Tuodaan viestialue näkösälle
-    let noteArea = document.querySelector("#notes");
-    noteArea.style.display = "block";
+
+    if(noteAreaVisible === false) {
+        makeNoteAreaVisible();
+        noteAreaVisible = true;
+    }
+
+
+    noteAdder.value = "";
+    newNote.value = "";
+    importantNote.checked = false;
+    noteAdder.focus()
 }
 
 function magicHappens() {

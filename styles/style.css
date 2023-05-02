@@ -8,7 +8,7 @@ body {
 }
 
 .nav-link button {
-  min-width: 75x;
+  min-width: 90px;
 }
 
 #main {
@@ -28,7 +28,7 @@ body {
 }
 
 #notes {
-  display: none;
+  opacity: 0;
 }
 
 .card {
@@ -39,7 +39,7 @@ body {
 
 @media only screen and (min-width: 768px) {
   .navbar-nav {
-    margin-left: -175px;
+    margin-left: -200px; 
   }
 
   .card {
