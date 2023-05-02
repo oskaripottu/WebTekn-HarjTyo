@@ -70,13 +70,8 @@ function addNote() {
         noteAreaVisible = true;
     }
 
-
     noteAdder.value = "";
     newNote.value = "";
     importantNote.checked = false;
-    noteAdder.focus()
-}
-
-function magicHappens() {
-    alert("Jeejee!");
+    noteAdder.focus();
 }
