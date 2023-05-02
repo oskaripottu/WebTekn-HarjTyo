@@ -11,11 +11,13 @@ function addNote() {
 
     //Tarkistetaan onko nimikenttä tyhjä
     if(newNote.value.length == 0) {
+        alert("Viestikenttä on tyhjä!");
         throw Error();
     }
 
     //Tarkistetaan onko viestikenttä tyhjä
     if(noteAdder.value.length == 0) {
+        alert("Nimikenttä on tyhjä!");
         throw Error();
     }
     
@@ -49,7 +51,6 @@ function addNote() {
     //Tuodaan viestialue näkösälle
     let noteArea = document.querySelector("#notes");
     noteArea.style.display = "block";
-
 }
 
 function magicHappens() {
